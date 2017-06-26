@@ -1,0 +1,30 @@
+\begin{thebibliography}{\hspace{\parindent}}
+
+\bibitem[NOME(2012)NOME]{site} NOME. Descrição. Disponível em:
+  <\url{http://www.site/abc.html}>. Acesso em: 19 jan. 2012.
+
+\bibitem[SANTOS(2007)SANTOS]{tese} SANTOS, C\@. \textbf{Título do Trabalho
+  Acadêmico}. 2007. Tese (Doutorado em Ciência da Computação) --- PPGC,
+  UFRGS, Porto Alegre.
+
+\bibitem[SILVA(2014)SILVA]{apresentacao} SILVA, F\@. \textbf{Título do
+  Trabalho}. Notas de Aula. Disponível em: <http://www.site/abc.pdf>. Acesso
+  em: 21 mai. 2014.
+
+\bibitem[SILVA et~al.(2011)SILVA et~al.]{capitulo} SILVA, F. et~al\@. Título
+  do Capítulo. In: SANTOS, C\@.~(Ed.). \textbf{Título do Livro}. [S.l.]: Ed.
+  IFRS, 2011. p.205--242.
+
+\bibitem[SILVA; SANTOS(2006)SILVA; SANTOS]{artigo} SILVA, F.; SANTOS, C\@. Um
+  artigo numa revista. \textbf{Proceedings of the IEEE}, [S.l.], v.94, n.6,
+  p.1089--1120, June~2006.
+
+\bibitem[SILVA; SANTOS(2014)SILVA; SANTOS]{paper} SILVA, F.; SANTOS, C\@.
+  Título do Paper. In: NOME DA CONFERÊNCIA, NDC, 28., 2014, Tampa, FL, USA.
+  \textbf{Proceedings{\ldots}} Porto Alegre: SBC, 2014. p.327--330.
+
+\bibitem[SILVA; SANTOS; ROSA(1998)SILVA; SANTOS; ROSA]{livro} SILVA, F.;
+  SANTOS, C.; ROSA, B\@. \textbf{Título do Livro}. 3rd.ed. Rio Grande, RS,
+  Brasil: Ed. Tabajara, 1998.
+
+\end{thebibliography}
