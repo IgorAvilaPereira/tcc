@@ -1,0 +1,184 @@
+\documentclass[table, usenames, svgnames, dvipsnames]{beamer}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{array}
+\usepackage{xcolor}
+\usetheme{Luebeck}
+\usecolortheme[named=SeaGreen]{structure}
+% seções com caixa verde claro
+\usecolortheme{spruce}
+
+\definecolor{corsubsection}{RGB}{42, 127, 79}
+%\definecolor{lightpink}{RGB}{255,182,193}
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{frametitle}{size=\large}
+% com sublinhado nos titulos
+%\setbeamertemplate{frametitle}{\color{black}\bfseries \vspace{10px} \insertframetitle\par\vskip-6pt\hrulefill}
+
+\setbeamercolor{section in head/foot}{fg=white, bg=SeaGreen}
+\setbeamercolor{subsection in head/foot}{fg=white, bg=corsubsection}
+
+%For example blocks
+%\setbeamercolor{block title example}{fg=red,bg=orange}
+%\setbeamercolor{block body example}{fg=cyan,bg=yellow}
+
+%For alert blocks
+%\setbeamercolor{block title alerted}{fg=olive,bg=pink}
+%\setbeamercolor{block body alerted}{fg=blue,bg=magenta}
+
+%For blocks
+%\setbeamercolor{block title}{fg=white,bg=blue}
+%\setbeamercolor{block body}{fg=white,bg=green!40!black}
+
+%For alert blocks
+\setbeamercolor{block title alerted}{fg=white,bg=red}
+\setbeamercolor{block body alerted}{fg=black,bg=pink}
+
+\beamertemplatenavigationsymbolsempty
+
+% Podem ser utilizadas imagens no background
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{figuras/rodape.png}}
+
+% Os simbolos de navegacao nao sao necessarios
+\setbeamertemplate{navigation symbols}{}
+\defbeamertemplate{footline}{centered page number}
+{%
+	\hspace*{\fill}%
+	\usebeamercolor[fg]{page number in head/foot}%
+	\usebeamerfont{page number in head/foot}%
+	\textcolor{white}{\insertpagenumber\,/\,\insertpresentationendpage}%
+	\hspace*{\fill}\vskip2pt%
+}
+\setbeamertemplate{footline}[centered page number]
+
+% Indice para cada seção (aparece antes de cada section)
+\AtBeginSection[] 
+{
+	\begin{frame}<handout:0>
+		\frametitle{\textbf{Agenda}}
+		\footnotesize{ \tableofcontents[currentsection,hideothersubsections] }
+	\end{frame}
+}
+
+\DeclareGraphicsExtensions{.pdf,.jpg,.png} % compilamos apenas com pdflatex
+
+
+\graphicspath{{./figuras/}} 
+
+\title{\textbf{Título}}
+
+\subtitle{}
+
+\author[Fulano de Tal]{\scriptsize
+	Aluno: Fulano de Tal \\
+	Orientador: Prof. Beltrano
+}
+\institute{\\[1.0mm] 
+	Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul (IFRS) \\
+	Câmpus Rio Grande \\
+	Divisão de Computação}
+\date{}
+
+\begin{document}	
+	  
+{%\usebackgroundtemplate{}} 
+	\begin{frame}[plain]
+		%\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figuras/principal_superior_dc}
+		%		\caption{}
+		%	\label{fig:principal_superior_dc}
+		%	\end{figure}	
+		%		\vspace{6px}		
+		\titlepage	
+%		\addtocounter{framenumber}{-1}
+	\end{frame}
+}
+
+\begin{frame}
+\frametitle{\textbf{Agenda}}
+	\footnotesize{ \tableofcontents }
+\end{frame}
+
+
+\section{Seção}
+
+\begin{frame}
+	\frametitle{\textbf{Seção}}
+	\begin{block}{bloco}
+		texto bloco
+	\end{block}
+\end{frame}
+
+
+\subsection{Subseção}
+
+\begin{frame}
+	\frametitle{\textbf{Subseção}}
+	Texto
+	\begin{itemize}
+		\item Item1
+	\end{itemize}
+\end{frame}
+
+
+\subsection{Subseção}
+
+\begin{frame}
+	\frametitle{\textbf{Subseção}}
+	\begin{itemize}
+		\item Item1
+	\end{itemize}
+\end{frame}
+
+
+
+\subsection{Subseção}
+
+\begin{frame}
+	\frametitle{\textbf{Subseção}}
+\begin{enumerate}
+	\item Item 1
+	\item Item 2
+\end{enumerate}
+\end{frame}
+
+
+\section{Seção}
+
+\begin{frame}
+	\frametitle{\textbf{Seção}}
+	\begin{block}{bloco}
+		texto bloco
+	\end{block}
+\end{frame}
+
+
+\subsection{Subseção}
+
+\begin{frame}
+	\frametitle{\textbf{Subseção}}
+	\begin{alertblock}{bloco}
+		Texto
+	\end{alertblock}
+\end{frame}
+
+
+{%\usebackgroundtemplate{}} 
+	\begin{frame}[plain]
+	%\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figuras/principal_superior_dc}
+%		\caption{}
+	%	\label{fig:principal_superior_dc}
+%	\end{figure}	
+%		\vspace{6px}		
+		\titlepage	
+%		\addtocounter{framenumber}{-1}
+	\end{frame}
+}
+
+
+\end{document}
