@@ -7,7 +7,7 @@
 % Identificacao
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ifrs}[2005/01/14 v4.3.1 Formatacao de documentos para o IFRS]
+\ProvidesClass{ifrs}[2021/06/02 v4.3.1 Formatacao de documentos para o IFRS]
 
 %==============================================================================
 % Declaracao de opcoes
@@ -224,7 +224,7 @@
 	\vfill
 	\MakeUppercase{\instituicao}\\
 	Reitor: \reitor\\ 
-	Pró-Reitor de Graduação: \proreitorgraduacao\\ 
+	Pró-Reitor de Ensino: \proreitorgraduacao\\ 
 	Diretor Geral do \campus: \diretor\\ 
 	Coordenador do curso: \cordenador\\ 
 }
